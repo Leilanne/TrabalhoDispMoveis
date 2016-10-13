@@ -12,5 +12,79 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Login"
+        android:id="@+id/labLogin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:textColor="@color/abc_primary_text_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:layout_marginTop="59dp"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/Login"
+        android:layout_alignLeft="@+id/labLogin"
+        android:layout_alignStart="@+id/labLogin"
+        android:textIsSelectable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Senha"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:password="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Senha"
+        android:layout_alignStart="@+id/Senha"
+        android:layout_alignRight="@+id/Senha"
+        android:layout_alignEnd="@+id/Senha"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTRAR"
+        android:id="@+id/btEntrar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:fontFamily="corbel"
+        android:focusable="false"
+        android:background="#198dd1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/telalogin"
+        android:layout_above="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp" />
+
 </RelativeLayout>
