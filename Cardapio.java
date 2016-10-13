@@ -12,7 +12,7 @@ public class Cardapio extends AppCompatActivity {
         setContentView(R.layout.activity_cardapio);
         Bundle args = getIntent().getExtras();
         String nome = args.getString("nome");
-        TextView text = (TextView)findViewById(R.id.tCardapio);
-        text.setText("Seja Bem vindo ao Cardápio !!!");
+        TextView card = (TextView)findViewById(R.id.tCardapio);
+        card.setText("Seja Bem vindo ao Cardápio !!!");
     }
 }
